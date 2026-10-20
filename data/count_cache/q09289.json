@@ -1,0 +1,14 @@
+{
+  "hermiticity": 3.427006493071148e-16,
+  "pivot_imag_relative": 4.485919008782126e-06,
+  "method": "real_symmetric_doubled_LDLT",
+  "real_backward_error": 2.0932416952137984e-15,
+  "ldlt_probe_error": 2.970736804811347e-12,
+  "real_min_abs_pivot": 4.913324788829998e-07,
+  "min_abs_pivot": 4.913326144412311e-07,
+  "backward_error": 1.2404501145752983e-16,
+  "negative": 8308,
+  "q": 9289,
+  "window": 15,
+  "source_fingerprint": "6f69fce563da81ff1877685e3411a75850239cbd9bbfd1f6d0072f2d387718c7"
+}

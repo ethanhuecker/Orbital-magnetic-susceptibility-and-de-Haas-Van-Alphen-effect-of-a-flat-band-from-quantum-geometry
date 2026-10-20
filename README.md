@@ -43,17 +43,6 @@ For independent checks using the supplied data:
 python reproduce.py --stage verify
 ```
 
-Each stage can also be run separately, in order:
-`geometry`, `spectra`, `counts`, `analyze`, `figures`, `verify`.
-`validation/checks.json` contains every test, its value, tolerance, and status.
-A failed check returns a nonzero exit code. `validation/reproduction_run.log`
-records the final successful run. It reused computed spectra and counts after
-checking their source fingerprints, then regenerated the analysis, separate
-phase audit, figures, and independent checks. `validation/generation_run.log`
-records the preceding run that completed the resumed raw-count calculation.
-`validation/figure_update_run.log` records the current figure generation after
-removing plots that are not figures in the paper.
-
 ## Figure and data map
 
 | Paper result | Generated figure |
@@ -133,8 +122,5 @@ Model and sweep parameters are explicit in `config.json` and `phase_config.json`
 | `plot_figures.py`, `paper3_style.py` | Figure assembly and supplied publication style |
 | `verify.py`, `report.py` | Independent implementation/convergence/observable checks and the generated audit |
 
-`reference/input_sha256.json` records all supplied input files by hash.
-`reference/flatqwz_changes.patch` records the minimal changes to the supplied
-core. The other old launchers and plotters are not required; they depended on
-missing caches, obsolete parameters, or auxiliary unpublished figures.
+
 See `NOTICE` for retained source attribution.

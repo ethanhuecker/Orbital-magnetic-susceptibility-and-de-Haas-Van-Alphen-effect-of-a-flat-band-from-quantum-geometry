@@ -1,0 +1,6 @@
+{
+  "q_min": 40,
+  "q_max": 100,
+  "q_step": 1,
+  "description": "Separate phase-scale test mentioned on page 14; extends beyond the Fig. 5 expansion window."
+}

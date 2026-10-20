@@ -1,0 +1,16 @@
+The supplied source files flatqwz.py, qwz_cross.py, paper3_style.py,
+sweep_counts4.py, and make_fig*.py carry:
+
+Copyright 2026 Anthropic PBC
+SPDX-License-Identifier: Apache-2.0
+
+Those notices are retained in copied or adapted files. The sparse Harper
+assembly and plotting definitions in this package are adapted from those
+supplied sources. New driver, geometry, analysis, and verification code was
+prepared for this numerical reproduction request.
+
+Paper: Ethan Huecker, Mengxing Ye, and Yuxuan Wang,
+Orbital magnetic susceptibility and de Haas-van Alphen effect of a flat band
+from quantum geometry, arXiv:2610.12193v1 (2026).
+The reference figures are extracted from the user-provided paper and are
+included for comparison, not used as computed numerical data.

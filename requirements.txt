@@ -1,0 +1,4 @@
+# Tested with CPython 3.12.14; no Jupyter, LaTeX, or external data service needed.
+numpy==2.3.5
+scipy==1.17.0
+matplotlib==3.10.8

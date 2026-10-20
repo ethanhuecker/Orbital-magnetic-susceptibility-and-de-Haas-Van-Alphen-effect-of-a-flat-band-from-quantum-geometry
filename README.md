@@ -1,4 +1,4 @@
-# Numerical Calculations *Orbital magnetic susceptibility and de Haas–van Alphen effect of a flat band from quantum geometry*
+# Numerical calculations for *Orbital magnetic susceptibility and de Haas–van Alphen effect of a flat band from quantum geometry*
 
 Numerical construction of the five figures and the accompanying two-band numerical checks in ArXiv:2610.12193 "Orbital magnetic susceptibility and de Haas–van Alphen effect of a flat band from
 quantum geometry". 

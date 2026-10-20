@@ -27,8 +27,7 @@ Use `--workers 1` on a machine with limited RAM. Four workers were tested in an
 workers even when four are requested. BLAS thread counts are limited to avoid
 oversubscription. Process entry points are guarded for Windows.
 
-The archive includes the computed raw data. Cached spectra/counts are accepted
-only when their source fingerprint matches. To recompute them, add `--force`.
+The archive does not include the raw data. To recompute them, add `--force`.
 The first full run takes several minutes on the tested machine; hardware and
 LAPACK/BLAS implementation can substantially change this.
 
@@ -109,8 +108,6 @@ Model and sweep parameters are explicit in `config.json` and `phase_config.json`
   are 25, 33, 45, 61, then 75. Every raw q and window ID is saved. This is an
   explicit reconstruction of the caption's 25--75-point prescription, not a
   claim to know the missing original extension's exact grid.
-- The original 25-point frequency estimate is also retained for every window
-  in `data/crossover_analysis.json`. This exposes staircase-resolution effects.
 - Susceptibility uses a free quartic fit in B to the full two-band grand
   potential at T=0.1. No theory coefficient is constrained in the fit. The
   q grid within the paper's stated 320--1200 interval is explicitly reconstructed

@@ -58,11 +58,11 @@ removing plots that are not figures in the paper.
 
 | Paper result | Generated figure | Recomputed inputs |
 | --- | --- | --- |
-| Fig. 1: orbital moment and zero contour | `figures/figure_1_moment.png` | Analytic Bloch vector and Berry curvature |
+| Fig. 1: orbital moment and zero contour | `figures/figure_1_moment.png` |
 | Fig. 2: bandwidth and spacing | `figures/figure_2_spectrum.png` |
-| Fig. 3: susceptibility | `figures/figure_3_susceptibility.png` | Full spectra at q=320--1200 |
-| Fig. 4: pinned waveform and supplied plotting-script damping protocol | `figures/figure_4_dhva.png` | q=60--320 spectra |
-| Fig. 4 caption's different damping protocol | `figures/figure_4_caption_protocol.png` | Same spectra, mu=-1-B/2; independently computed contour geometry |
+| Fig. 3: susceptibility | `figures/figure_3_susceptibility.png` |
+| Fig. 4: pinned waveform and supplied plotting-script damping protocol | 
+| Fig. 4 caption's different damping protocol | `figures/figure_4_caption_protocol.png` | 
 | Fig. 5: narrow-band crossover | `figures/figure_5_crossover.png` | 
 
 Every figure is also saved as SVG. No PDF-reading software is needed to run the

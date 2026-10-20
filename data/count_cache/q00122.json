@@ -1,0 +1,11 @@
+{
+  "hermiticity": 2.8913876256831814e-16,
+  "pivot_imag_relative": 9.06614698043136e-10,
+  "method": "complex_unpivoted_LDLH",
+  "min_abs_pivot": 5.059949434260691e-05,
+  "backward_error": 1.082656383444163e-14,
+  "negative": 80,
+  "q": 122,
+  "window": 1,
+  "source_fingerprint": "6f69fce563da81ff1877685e3411a75850239cbd9bbfd1f6d0072f2d387718c7"
+}

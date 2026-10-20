@@ -1,0 +1,33 @@
+--- supplied/flatqwz.py
++++ flatqwz.py
+@@ -3,7 +3,7 @@
+ """flatqwz.py -- library for the flattened-QWZ dHvA production pipeline (Part III).
+ 
+ Model: flattened QWZ, H(k) = dhat(k) . sigma,
+-  d = (sin kx, sin ky, u + cos kx + cos ky), u = -3/2.
++  d = (sin kx, sin ky, u + cos kx + cos ky), u = -1.2.
+ Flat bands at +-1; the lower band (eps0 = -1) is the subject.
+ Units: e = hbar = a = 1.  Flux phi = 1/q per plaquette, B = 2*pi*phi = 2*pi/q.
+ 
+@@ -12,7 +12,7 @@
+ with m_orb(k) equal (numerically, for this model) to the lower-band Berry
+ curvature; closed form in `berry_curvature` (alias `m_orb`).
+ 
+-Committed chemical potential for the whole study: mu(B) = -1 + m0*B, m0 = -1/2.
++Legacy helper default (the published waveform instead uses mu=-1): mu(B) = -1 + m0*B, m0 = -1/2.
+ 
+ Phase-offset conventions (locked):
+   gamma0 = 1/2
+@@ -29,10 +29,10 @@
+ from scipy.interpolate import LSQUnivariateSpline
+ 
+ # ---------------------------------------------------------------- constants
+-U = -1.5
++U = -1.2
+ K1_DEFAULT, K2_DEFAULT = 0.51, 1.13
+ N_FFT_DEFAULT = 1024
+-R_TRUNC_DEFAULT = 24
++R_TRUNC_DEFAULT = 30
+ 
+ SX = np.array([[0, 1], [1, 0]], dtype=complex)
+ SY = np.array([[0, -1j], [1j, 0]], dtype=complex)

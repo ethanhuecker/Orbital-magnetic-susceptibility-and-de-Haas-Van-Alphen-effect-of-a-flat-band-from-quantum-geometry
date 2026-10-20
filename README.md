@@ -2,7 +2,7 @@
 
 Numerical construction of the five figures and the accompanying two-band numerical checks in ArXiv:2610.12193. 
 
-Contains the code, parameters, and computed data needed to rerun the paper's numerical results.
+Contains the code and parameters needed to rerun the paper's numerical results.
 
 ## Run
 
@@ -60,11 +60,11 @@ removing plots that are not figures in the paper.
 | Paper result | Generated figure | Recomputed inputs |
 | --- | --- | --- |
 | Fig. 1: orbital moment and zero contour | `figures/figure_1_moment.png` | Analytic Bloch vector and Berry curvature |
-| Fig. 2: bandwidth and spacing | `figures/figure_2_spectrum.png` | `data/spectra/q*.npz`, `data/flat_observables.npz` |
-| Fig. 3: susceptibility | `figures/figure_3_susceptibility.png` | Full spectra at q=320--1200; `data/susceptibility_raw.npz` and `.json` |
-| Fig. 4: pinned waveform and supplied plotting-script damping protocol | `figures/figure_4_dhva.png` | q=60--320 spectra; `data/flat_analysis.json` |
+| Fig. 2: bandwidth and spacing | `figures/figure_2_spectrum.png` |
+| Fig. 3: susceptibility | `figures/figure_3_susceptibility.png` | Full spectra at q=320--1200 |
+| Fig. 4: pinned waveform and supplied plotting-script damping protocol | `figures/figure_4_dhva.png` | q=60--320 spectra |
 | Fig. 4 caption's different damping protocol | `figures/figure_4_caption_protocol.png` | Same spectra, mu=-1-B/2; independently computed contour geometry |
-| Fig. 5: narrow-band crossover | `figures/figure_5_crossover.png` | `data/sweep_crossover.npz`, `data/theory_crossover.npz` |
+| Fig. 5: narrow-band crossover | `figures/figure_5_crossover.png` | 
 
 Every figure is also saved as SVG. No PDF-reading software is needed to run the
 calculation. The five raster images extracted from the provided paper are kept
@@ -74,10 +74,7 @@ to the numerical computation or regenerated figures.
 The figure generator produces the five numbered paper figures and the separately
 named Figure 4 caption-protocol comparison described above. Phase extrapolation,
 spacing, and phase-content checks remain in the numerical data and verification
-suite; they do not produce additional figures. Their results are in
-`data/flat_analysis.json`, `data/crossover_analysis.json`, and
-`data/phase_scale_analysis.json`, with raw phase spectra in
-`data/phase_scale_spectra.npz`.
+suite. 
 
 ## Conventions and parameters
 
@@ -144,29 +141,4 @@ Model and sweep parameters are explicit in `config.json` and `phase_config.json`
 `reference/flatqwz_changes.patch` records the minimal changes to the supplied
 core. The other old launchers and plotters are not required; they depended on
 missing caches, obsolete parameters, or auxiliary unpublished figures.
-
-## Limits of verification
-
-This validates the stated noninteracting two-band lattice calculation. It does
-not prove the paper's general multiband derivation. Finite-field ED and the
-truncated weak-field theory are not exactly equal; deviations are reported.
-One magnetic Bloch point is used as in the supplied code, with an explicit
-twist-dependence check near the measured contour.
-
-The paper's B_gamma scale is computed from zero-field integrals and lies
-beyond the largest field in the Fig. 5 count sweep, as the paper acknowledges.
-The separate phase-scale experiment described on page 14 is reconstructed at
-q=40--100 and approximately confirms the predicted crossing. Its discrete
-brackets and finite-field error are reported, and its larger expansion parameter
-is not confused with the Fig. 5 weak-field window.
-Likewise the x<=0.10 caption describes the centers approximately: the actual
-first 25-point window reaches q=88, where x is approximately 0.113.
-
-The sparse code does not assume that arbitrary LU pivot signs give inertia.
-It checks permutations and factor accuracy, and switches to a doubled real
-symmetric representation when complex pivots are numerically unreliable.
-See the official SciPy documentation for the underlying solver contracts:
-[splu](https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.linalg.splu.html)
-and [SuperLU](https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.linalg.SuperLU.html).
-
 See `NOTICE` for retained source attribution.

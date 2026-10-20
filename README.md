@@ -1,6 +1,7 @@
-# Numerical Calculations arXiv:2610.12193v1
+# Numerical Calculations For arXiv:2610.12193v1
 
-Numerical construction of the five figures and the accompanying two-band numerical checks in ArXiv:2610.12193. 
+Numerical construction of the five figures and the accompanying two-band numerical checks in ArXiv:2610.12193 "Orbital magnetic susceptibility and de Haas–van Alphen effect of a flat band from
+quantum geometry". 
 
 Contains the code and parameters needed to rerun the paper's numerical results.
 

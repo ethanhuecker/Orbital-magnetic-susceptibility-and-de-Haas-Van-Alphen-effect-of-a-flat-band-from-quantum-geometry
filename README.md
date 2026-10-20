@@ -61,8 +61,7 @@ removing plots that are not figures in the paper.
 | Fig. 1: orbital moment and zero contour | `figures/figure_1_moment.png` |
 | Fig. 2: bandwidth and spacing | `figures/figure_2_spectrum.png` |
 | Fig. 3: susceptibility | `figures/figure_3_susceptibility.png` |
-| Fig. 4: pinned waveform and supplied plotting-script damping protocol | 
-| Fig. 4 caption's different damping protocol | `figures/figure_4_caption_protocol.png` | 
+| Fig. 4  damping protocol | `figures/figure_4_caption_protocol.png` | 
 | Fig. 5: narrow-band crossover | `figures/figure_5_crossover.png` | 
 
 Every figure is also saved as SVG. No PDF-reading software is needed to run the

@@ -1,20 +1,8 @@
-# Reproduction of arXiv:2610.12193v1
+# Numerical Calculations arXiv:2610.12193v1
 
-This is a complete, runnable numerical reconstruction of the five figures and
-the accompanying two-band numerical checks in *Orbital magnetic susceptibility
-and de Haas-van Alphen effect of a flat band from quantum geometry*.
+Numerical construction of the five figures and the accompanying two-band numerical checks in ArXiv:2610.12193. 
 
-The supplied scripts were incomplete as a reproduction package. This directory
-includes the missing generators, numerical data computed from the Hamiltonian,
-figure outputs, and independent checks. It does **not** claim to recover missing
-original checkpoint files or make every image pixel identical to the PDF.
-Read `VERIFICATION.md` for the measured errors and discrepancies found.
-
-The repository contains the code, parameters, and computed data needed to rerun
-the paper's numerical results. All runtime paths are relative to the source
-directory; no original author directory, PDF extraction, or external data cache
-is required. The included `.gitignore` excludes local Python environments and
-interpreter caches while keeping the reproducibility data and figure outputs.
+Contains the code, parameters, and computed data needed to rerun the paper's numerical results.
 
 ## Run
 

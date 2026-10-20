@@ -57,7 +57,7 @@ removing plots that are not figures in the paper.
 ## Figure and data map
 
 | Paper result | Generated figure |
-| --- | --- | --- |
+| --- | --- |
 | Fig. 1: orbital moment and zero contour | `figures/figure_1_moment.png` |
 | Fig. 2: bandwidth and spacing | `figures/figure_2_spectrum.png` |
 | Fig. 3: susceptibility | `figures/figure_3_susceptibility.png` |

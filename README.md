@@ -29,13 +29,13 @@ The archive does not include the raw data. To recompute them, add `--force`.
 The first full run takes several minutes on the tested machine; hardware and
 LAPACK/BLAS implementation can substantially change this.
 
-For a quick redraw, after activating the environment:
+For a quick redraw, after activating the environment and full calculation is completed:
 
 ```bash
 python reproduce.py --stage figures
 ```
 
-For independent checks using the supplied data:
+For independent checks after generating the data:
 
 ```bash
 python reproduce.py --stage verify
@@ -52,9 +52,7 @@ python reproduce.py --stage verify
 | Fig. 5: narrow-band crossover | `figures/figure_5_crossover.png` | 
 
 Every figure is also saved as SVG. No PDF-reading software is needed to run the
-calculation. The five raster images extracted from the provided paper are kept
-in `reference/published_figures/` solely for visual comparison; none is an input
-to the numerical computation or regenerated figures.
+calculation. 
 
 The figure generator produces the five numbered paper figures and the separately
 named Figure 4 caption-protocol comparison described above. Phase extrapolation,
